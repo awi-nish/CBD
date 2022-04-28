@@ -1,0 +1,520 @@
+body{
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 1920px;
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing:border-box;
+    transition: all 0.5s ease-out;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.main-container{
+    padding: 0px 252px;
+}
+.logo-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link a{
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    font-weight: 700;
+    font-family: "Poppins";
+}
+.cart{
+    background-color: #ee7c24;
+    padding: 22.5px 20px;
+}
+.nav-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 575px;
+}
+.banner{
+    background-image: url("../img/banner.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+h3{
+    font-size: 26px;
+    line-height: 24px;
+    color: #000000;
+   font-weight: 400;
+   font-family: "Poppins";
+}
+h2{
+    font-size: 80px;
+    letter-spacing: -2px;
+    line-height: 94px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Josefin Sans";
+}
+.btn-text{
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    background-color: #ee7c24;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius:20px;
+}
+.banner-btn{
+    border: none;
+    padding: 20.5px 55.5px;
+}
+.padding-top-bottom{
+    padding-bottom: 146px;
+    padding-top: 53px;
+}
+.banner h2{
+    margin: 35px 0px;
+}
+.offer-card{
+    background-image: url("../img/offer-card.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 4px 0px; */
+    max-width: 1400px;
+    min-height: 343px;
+}
+h1{
+    font-size: 200px;
+    letter-spacing: -6px;
+    line-height: 139px;
+    color: #52af47;
+    font-weight: 700;
+    font-family: "Josefin Sans";
+    margin-bottom: 0px;
+    margin-top: 106px;
+}
+.offer-text{
+    text-align: center;
+}
+.offer-container{
+    margin-top: 145px;
+}
+.offer-text p{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 300;
+    font-family: "Poppins";
+    margin-top: 0px;
+}
+.facility{
+    display: flex;
+    align-items: flex-start;
+}
+.facility p{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 31px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Poppins";
+    margin-top: 0px;
+}
+h5{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 67px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Josefin Sans";
+    margin: 0px 0px;
+}
+.money-heading{
+    line-height: 50px;
+}
+.flex-facility{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 125px;
+}
+.buy-options h5{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Josefin Sans";
+}
+.buy-options p{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #000000;
+    margin: 10px 0px;
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+.buy-options a{
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #ee7c24;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+.buy-options img{
+    margin-top: 34px;
+}
+.buy-options{
+    padding: 26px 9.5px 23px 9.5px;
+    box-shadow: 0 0 23px rgba(101,101,101,0.1);
+    border-radius: 30px 30px 0px 30px;
+}
+.top{
+    margin-left: 33px;
+}
+.flex-buy-option{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 105px;
+}
+.product-container{
+    background-image: url("../img/product-background.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat; 
+    margin-top: 125px;
+
+}
+.product-heading h5{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 92px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Josefin Sans";
+    text-align: center;
+    padding-top: 182px;
+    margin-bottom: 0px;
+}
+.product-heading p{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 31px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+    margin-top: 0px;
+}
+.products-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+    flex-wrap: wrap;
+}
+.product-image{
+    min-height: 258px;
+    min-width: 305px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    position: relative;
+}
+.rating i{
+    color: #ee7c24;
+}
+.type-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.type-rating p{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 31px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+.name-price h5{
+    font-size: 26px;
+    letter-spacing: -1px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Josefin Sans";
+    margin:0px 0px;
+}
+.name-price p{
+    font-size: 26px;
+    letter-spacing: -1px;
+    line-height: 60px;
+    color: #52af47;
+    font-weight: 700;
+    font-family: "Josefin Sans";
+    margin:0px 0px;
+}
+.line-through{
+    font-size: 26px;
+    letter-spacing: -1px;
+    line-height: 92px;
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    color: #52af47;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+}
+.sale{
+    position: absolute;
+    top: -50px;
+    right: 0px;
+}
+.product-card{
+    margin-bottom: 22px;
+}
+.view-btn-contaniner{
+    text-align: center;
+    padding-bottom: 212px;
+}
+.help-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 135px;
+}
+.help-container h5{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Josefin Sans";
+}
+.up-pera,.down-pera{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+
+.email{
+    color:#ff0000;
+    text-decoration: underline;
+}
+.down-pera{
+    margin-top: 34px;
+    margin-bottom: 55px;
+}
+.reviwe-heading h5{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Josefin Sans";
+    text-align: center;
+}
+.reviwe-heading p{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+}
+.reviwe-card p{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 400;
+    margin: 25px 42px;
+    font-family: "Poppins";
+}
+.nmae-occupation h5{
+    font-size: 26px;
+    letter-spacing: -1px;
+    line-height: 72px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Josefin Sans";
+}
+.nmae-occupation p{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 3px;
+    margin: 0px 0px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+.reviwer-name-card h6{
+    font-size: 269px;
+    letter-spacing: -7px;
+    line-height: 287px;
+    margin: 0px 0px;
+    color: #ebf8e0;
+    font-weight: 700;
+    font-family: "Libre Baskerville";
+}
+.reviwer-name-card{
+    background-color: #52af47;
+    display: flex;
+    max-height: 102px;
+    justify-content: space-between;
+    min-width: 407px;
+    padding: 0px 14px;
+    border-radius: 30px 0px;
+}
+.reviwe-cards-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 61px;
+}
+.reviwe-card{
+    box-shadow: 0 0 23px rgba(101,101,101,0.1);
+    border-radius: 30px 0px;
+    padding: 10px 7px;
+}
+.review-container{
+    margin-top: 127px; 
+}
+.detail-container::before{
+    content: ' ';
+    background-image: url("../img/up.png");
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0px;
+    background-size: cover;
+    top: -125px;
+
+}
+.detail-container{
+    background-color:#ffe6d3 ;
+    position: relative;
+    padding-top: 22px;
+    margin-top: 112px;
+}
+
+
+
+.know-more{
+    background-color: #ebf8e0;
+}
+
+.footer{
+    background-color: #252527;
+    display: none;
+}
+.footer-sec-part h5{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Josefin Sans";
+}
+.footer-sec-part p{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+.footer-sec-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-part{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.footer-link h5{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 92px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Josefin Sans";
+}
+.footer-link li{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 34px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+
+.logo-part p{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+.email-add{
+    max-width:350px;
+    min-height: 51px;
+    background-color: white;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plan-icon{
+    padding: 14px 14px;
+    background-color: #ee7c24;
+    border-radius: 25px;
+    position:absolute;
+    left: 100%;
+    left: 85.5%;
+    top: 2.5%;
+}
+.email-add input{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 34px;
+    color: #9c9c9c;
+    font-weight: 400;
+    font-family: "Poppins";
+    width: 84%;
+    height: 36px;
+    background-color: transparent;
+    border: none;
+}
+.email-add input:focus{
+    outline: none;
+}
