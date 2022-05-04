@@ -37,6 +37,16 @@ a{
     align-items: center;
     min-width: 575px;
 }
+.l::after{
+    display:block;
+    content: '';
+    border-bottom: solid 1px black;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+.l:hover::after{
+    transform: scaleX(1);
+}
 .banner{
     background-image: url("../img/banner.png");
     background-size: cover;
@@ -72,6 +82,10 @@ h2{
     border: none;
     padding: 20.5px 55.5px;
 }
+.banner-btn:hover,.cart:hover,.plan-icon:hover{
+        background-color: #ee2453;
+}
+
 .padding-top-bottom{
     padding-bottom: 146px;
     padding-top: 53px;
@@ -233,6 +247,9 @@ h5{
     align-items: center;
     border-radius: 30px;
     position: relative;
+}
+.product-image:hover{
+   transform: translateY(-15px); 
 }
 .rating i{
     color: #ee7c24;
@@ -397,33 +414,61 @@ h5{
 }
 .detail-container::before{
     content: ' ';
-    background-image: url("../img/up.png");
+    background-image: url(../img/up.png);
     width: 100%;
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
     left: 0px;
-    background-size: cover;
-    top: -125px;
+    background-size: contain;
+    top: -277px;
 
 }
 .detail-container{
-    background-color:#ffe6d3 ;
+    background-color: #ffe6d3;
     position: relative;
-    padding-top: 22px;
-    margin-top: 112px;
+    padding-top: 102px;
+    padding-bottom: 236px;
+    margin-top: 250px;
 }
 
-
+.know-more::before{
+    content: ' ';
+    background-image: url(../img/sec.png);
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0px;
+    background-size: contain;
+    top: -278px;
+}
 
 .know-more{
     background-color: #ebf8e0;
 }
-
+.footer::before{
+    content: ' ';
+    background-image: url(../img/thi.png);
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0px;
+    background-size: contain;
+    top: -246px;
+}
 .footer{
     background-color: #252527;
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 43px;
+    padding-bottom: 76px;
+
 }
 .footer-sec-part h5{
     font-size: 40px;
@@ -445,6 +490,9 @@ h5{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    padding-top: 77px;
+    padding-bottom: 192px;
 }
 .logo-part{
     font-size: 18px;
@@ -458,6 +506,13 @@ ul{
     list-style: none;
     margin: 0px;
     padding: 0px;
+}
+.footer-link{
+    display: flex;
+    justify-content: space-between;
+    
+    min-width: 420px;
+
 }
 .footer-link h5{
     font-size: 20px;
@@ -475,6 +530,9 @@ ul{
     font-weight: 400;
     font-family: "Poppins";
 }
+.footer-link li:hover{
+    color:#ee2453 ;
+}
 
 .logo-part p{
     font-size: 18px;
@@ -483,6 +541,7 @@ ul{
     color: #ffffff;
     font-weight: 400;
     font-family: "Poppins";
+    margin-top: 43px;
 }
 .email-add{
     max-width:350px;
@@ -500,8 +559,17 @@ ul{
     border-radius: 25px;
     position:absolute;
     left: 100%;
-    left: 85.5%;
+    left: 81.5%;
     top: 2.5%;
+    cursor: pointer;
+}
+.search h5{
+    font-size: 20px;
+letter-spacing: 0px;
+line-height: 92px;
+color: #ffffff;
+font-weight: 700;
+font-family: "Josefin Sans";
 }
 .email-add input{
     font-size: 16px;
@@ -514,7 +582,63 @@ ul{
     height: 36px;
     background-color: transparent;
     border: none;
+    margin-left: 20px;
+}
+::placeholder{
+    color: #9c9c9c;
 }
 .email-add input:focus{
     outline: none;
+}
+.socail-media{
+    padding:20px 0px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px
+}
+.socail-media i{
+    font-size: 25px;
+    color: white;
+}
+#twit,#linkedIn{
+    font-size: 15px;
+    padding: 5px 5px;
+    background-color: white;
+    border-radius: 24px;
+    color: #252527;
+}
+.copy-right{
+    background-color: #1d1d1e;
+    text-align: center;
+    padding: 10.5px 0px;
+}
+.copy-right p{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 34px;
+    color: #666668;
+    font-weight: 400;
+    font-family: "Poppins";
+    margin: 0px 0px;
+}
+.disclamer{
+    background-color: #252527;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.disclamer span{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 23px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Poppins";
+}
+.disclamer p{
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 23px;
+    color: #ffffff;
+    font-family: "Poppins";
+    margin: 0px 0px;
 }
