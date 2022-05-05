@@ -7,13 +7,14 @@ body{
 *{
     box-sizing:border-box;
     transition: all 0.5s ease-out;
+    
 }
 a{
     text-decoration: none;
     color:black;
 }
 .main-container{
-    min-width: 1400px;
+    
     max-width: 1400px;
     margin: 0px auto;
     
@@ -101,7 +102,9 @@ h2{
 .email:hover,.buy-options a:hover{
     color: #ee2453;
 }
-
+.toggle{
+    display: none;
+}
 .padding-top-bottom{
     padding-bottom: 146px;
     padding-top: 50px;
@@ -122,7 +125,7 @@ h2{
     min-height: 343px;
 }
 .inner{
-    min-width: 1024px;
+    max-width: 1024px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -236,11 +239,36 @@ h5{
     margin-top: 120px;
 }
 .product-container{
-    background-image: url("../img/product-background.png");
-    background-size: contain;
-    background-position: center top;
-    background-repeat: no-repeat; 
-    margin-top: 125px;
+    background-color: #ebf8e0;
+    position: relative;
+    margin-top: 319px;
+    margin-bottom: 217px;
+}
+.product-container::before{
+    content: ' ';
+    background-image: url(../img/p-u.png);
+    width: 100%;
+    position: absolute;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0px;
+    background-size: 100%;
+    top: -100%;
+    z-index: -1;
+}
+.product-container::after{
+    content: ' ';
+    background-image: url(../img/p-b.png);
+    width: 100%;
+    position: absolute;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0px;
+    background-size: 100%;
+    top: 100%;
+    z-index: -1;
 
 }
 .product-heading h5{
@@ -251,7 +279,6 @@ h5{
     font-weight: 700;
     font-family: "Josefin Sans";
     text-align: center;
-    padding-top: 182px;
     margin-bottom: 0px;
 }
 .product-heading p{
@@ -347,7 +374,6 @@ h5{
 }
 .view-btn-contaniner{
     text-align: center;
-    padding-bottom: 212px;
 }
 .help-container{
     display: flex;
@@ -479,7 +505,7 @@ h5{
 }
 .flex{
     display: flex;
-    min-width:1400px;
+    max-width:1400px;
     justify-content: space-between;
     align-items: center;
 }
@@ -700,7 +726,7 @@ font-family: "Josefin Sans";
     color: #ffffff;
     font-family: "Poppins";
     margin: 0px 0px;
-    min-width: 1400px;
+    max-width: 1400px;
 }
 .socail-media i:hover{
     color:#ee2453;
@@ -729,12 +755,13 @@ font-family: "Josefin Sans";
     background-image: url(../img/f.png);
     width: 100%;
     position: absolute;
-    background-position: center;
+    background-position: bottom center;
     background-repeat: no-repeat;
     height: 100%;
     left: 0px;
-    background-size: contain;
-    top: -306px;
+    background-size: 100%;
+    top: -100%;
+    z-index: -1;
 
 }
 .flex{
@@ -747,12 +774,13 @@ font-family: "Josefin Sans";
     background-image: url(../img/s.png);
     width: 100%;
     position: absolute;
-    background-position: center;
+    background-position: bottom center;
     background-repeat: no-repeat;
     height: 100%;
     left: 0px;
-    background-size: contain;
-    top: -275px;
+    background-size: 100%;
+    top: -99%;
+    
     
 }
 .sec{
@@ -789,11 +817,196 @@ font-family: "Poppins";
     background-image: url(../img/t.png);
     width: 100%;
     position: absolute;
-    background-position: center;
+    background-position: bottom center;
     background-repeat: no-repeat;
     height: 100%;
     left: 0px;
-    background-size: contain;
-    top: -247px;
+    background-size: 100%;
+    top: -99%;
     
+}
+@media (max-width:1640px){
+    
+    .main-container{
+        max-width:1300px;
+    }
+    .cartificate{
+        width: 95%;
+    }
+    .flex{
+        max-width: 1300px;
+    }
+    h2{
+        line-height: 86px;
+        font-size: 75px;
+    }
+    .banner-btn{
+        padding: 19.5px 54.5px;
+    }
+    .disclamer p{
+        max-width: 1300px;
+    }
+    .disclamer br{
+        display: none;
+    }
+    
+}
+@media (max-width:1366px){
+    .main-container{
+        max-width: 1200px;
+    }
+    .flex-buy-option{
+        flex-direction: column;
+        align-items: center;
+    }
+    .buy-options{
+        margin-bottom: 20px;
+    }
+    .products-container{
+        justify-content: space-around;
+    
+    }
+    .help-container br{
+        display: none;
+    }
+    .reviwe-cards-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 74px;
+        
+        align-items: center;
+    }
+    .reviwe-card{
+        margin-bottom: 74px;
+    }
+    .first{
+        padding-bottom: 155px;
+    }
+    .sec{
+        padding-bottom: 108px;
+    }
+    .disclamer p{
+        max-width: 1200px;
+    }
+}
+@media(max-width:1280px){
+    .main-container{
+        max-width: 900px;
+    }
+    h2 {
+        line-height: 72px;
+        font-size: 62px;
+    }
+    .inner img{
+        width:18%;
+        margin-bottom: 134px;
+    }
+    h1{
+        font-size: 159px;
+        line-height: 83px;
+        margin-bottom: 0px;
+        margin-top: -12px;
+    }
+    .offer-text p{
+        font-size: 35px;
+        line-height: 39px;
+    }
+    .flex-facility{
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-heading p {
+        font-size: 17px;
+    }
+    .help-container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .flex{
+        align-items: center;
+    flex-direction: column;
+    }
+    .footer-flex{
+        flex-direction: column;
+    align-items: center;
+    }
+    .logo-part p br{
+        display: none;
+    }
+    
+    .logo-part{
+        text-align: center;
+
+    }
+    .search{
+        text-align: center;
+    }
+    .socail-media{
+        padding: 43px 0px;
+        max-width: 356px;
+    }
+    .third {
+        padding-top: 64px;
+    }
+    .disclamer p {
+        max-width: 900px;
+    }
+}
+@media(max-width:992px){
+    .nav-link{
+        display: none;
+    }
+    .nav-bar i{
+        color: #ee7c24;
+    }
+    .toggle{
+        display: block;
+        font-size: 34px;
+        color: #ee7c24;
+    }
+    
+    .main-container{
+        max-width: 700px;
+    }
+    h2 {
+        line-height: 62px;
+        font-size: 52px;
+    }
+    h1 {
+        font-size: 121px;
+        line-height: 56px;
+        margin-bottom: 0px;
+        margin-top: -75px;
+    }
+    .inner{
+        justify-content: space-around;
+    }
+    .inner img {
+        margin-bottom: 187px;
+    margin-left: 20px;
+    }
+    .facility{
+        margin-bottom: 56px;
+    }
+    h5{
+        font-size: 50px;
+    }
+    
+    .sec p {
+        width: 700px;
+    }
+    .first {
+        padding-bottom: 92px;
+    }
+    .sec {
+        padding-bottom: 80px;
+    }
+    .disclamer p {
+        font-size: 11px;
+    }
+    .disclamer p {
+        max-width: 700px;
+    }
+
 }
