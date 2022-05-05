@@ -13,6 +13,7 @@ a{
     color:black;
 }
 .main-container{
+    min-width: 1400px;
     max-width: 1400px;
     margin: 0px auto;
     
@@ -709,4 +710,90 @@ font-family: "Josefin Sans";
 }
 .rating i:hover{
     color:#666668;
+}
+
+
+
+
+
+.first{
+    background-color: #ffe6d3;
+    text-align: center;
+    position: relative;
+    margin-top: 300px;
+    padding-top: 2px;
+    padding-bottom: 277px;
+}
+.first::before{
+    content: ' ';
+    background-image: url(../img/f.png);
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0px;
+    background-size: contain;
+    top: -306px;
+
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec::before{
+    content: ' ';
+    background-image: url(../img/s.png);
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0px;
+    background-size: contain;
+    top: -275px;
+    
+}
+.sec{
+    background-color: #ebf8e0;
+    position: relative;
+    padding-bottom: 183px;
+}
+.sec h5{
+    font-size: 40px;
+letter-spacing: -1px;
+line-height: 50px;
+color: #000000;
+font-weight: 700;
+font-family: "Josefin Sans";
+margin: 0px 0px;
+}
+.sec p{
+    width: 893px;
+height: 100px;
+font-size: 20px;
+letter-spacing: 0px;
+line-height: 30px;
+color: #000000;
+font-weight: 400;
+font-family: "Poppins";
+}
+.third{
+    background-color: #252527;
+    position: relative;
+    padding-bottom: 73px;
+}
+.third::before{
+    content: ' ';
+    background-image: url(../img/t.png);
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0px;
+    background-size: contain;
+    top: -247px;
+    
 }
