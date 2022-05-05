@@ -473,8 +473,14 @@ h5{
     background-color: #ffe6d3;
     position: relative;
     padding-top: 102px;
-    padding-bottom: 236px;
+    padding-bottom: 206px;
     margin-top: 250px;
+}
+.flex{
+    display: flex;
+    min-width:1400px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .know-more::before{
@@ -503,14 +509,14 @@ h5{
     height: 100%;
     left: 0px;
     background-size: contain;
-    top: -246px;
+    top: -231px;
 }
 .footer{
     background-color: #252527;
     
     position: relative;
     padding-top: 43px;
-    padding-bottom: 76px;
+    padding-bottom: 69px;
 
 }
 .footer-flex{
@@ -539,7 +545,7 @@ h5{
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding-top: 77px;
+    padding-top: 30px;
     padding-bottom: 192px;
 }
 .logo-part{
@@ -550,6 +556,9 @@ h5{
     font-weight: 400;
     font-family: "Poppins";
 }
+.detail-container-padding{
+    padding-bottom: 41px;
+}
 ul{
     list-style: none;
     margin: 0px;
@@ -558,7 +567,6 @@ ul{
 .footer-link{
     display: flex;
     justify-content: space-between;
-    
     min-width: 420px;
 
 }
@@ -592,7 +600,7 @@ ul{
     margin-top: 43px;
 }
 .email-add{
-    max-width:350px;
+    min-width:350px;
     min-height: 51px;
     background-color: white;
     border-radius: 25px;
@@ -607,7 +615,7 @@ ul{
     border-radius: 25px;
     position:absolute;
     left: 100%;
-    left: 81.5%;
+    left: 85.5%;
     top: 2.5%;
     cursor: pointer;
 }
@@ -691,10 +699,14 @@ font-family: "Josefin Sans";
     color: #ffffff;
     font-family: "Poppins";
     margin: 0px 0px;
+    min-width: 1400px;
 }
 .socail-media i:hover{
     color:#ee2453;
 }
 #twit:hover,#linkedIn:hover{
     background-color:#ee2453 ;
+}
+.rating i:hover{
+    color:#666668;
 }
