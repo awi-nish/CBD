@@ -13,6 +13,9 @@ a{
     text-decoration: none;
     color:black;
 }
+button{
+    cursor: pointer;
+}
 .main-container{
     
     max-width: 1400px;
@@ -94,7 +97,11 @@ h2{
 }
 .banner-btn{
     border: none;
+    
     padding: 20.5px 55.5px;
+}
+.front{
+    z-index: 10;
 }
 .banner-btn:hover,.cart:hover,.plan-icon:hover,.contact-us:hover{
         background-color: #ee2453;
@@ -122,18 +129,21 @@ h2{
     align-items: center;
     /* padding: 4px 0px; */
     max-width: 1400px;
-    min-height: 343px;
+    
 }
 .inner{
     max-width: 1024px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -32px;
-    margin-right: 7px;
+    margin-top: -44px;
+    
 
 }
-h1{
+.offer-text{
+    padding-bottom: 63px;
+}
+.offer-text h1{
     font-size: 200px;
     letter-spacing: -6px;
     line-height: 139px;
@@ -141,7 +151,7 @@ h1{
     font-weight: 700;
     font-family: "Josefin Sans";
     margin-bottom: 0px;
-    margin-top: 106px;
+    
 }
 .offer-text{
     text-align: center;
@@ -161,6 +171,7 @@ h1{
     font-weight: 300;
     font-family: "Poppins";
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 .facility{
     display: flex;
@@ -284,7 +295,7 @@ h5{
 .product-heading p{
     font-size: 20px;
     letter-spacing: 0px;
-    line-height: 2px;
+    line-height: 30px;
     color: #000000;
     font-weight: 400;
     font-family: "Poppins";
@@ -420,7 +431,7 @@ h5{
 .reviwe-heading p{
     font-size: 20px;
     letter-spacing: 0px;
-    line-height: 0px;
+    line-height: 27px;
     color: #000000;
     font-weight: 400;
     font-family: "Poppins";
@@ -446,7 +457,7 @@ h5{
 .nmae-occupation p{
     font-size: 18px;
     letter-spacing: 0px;
-    line-height: 3px;
+    line-height: 23px;
     margin: 0px 0px;
     color: #ffffff;
     font-weight: 400;
@@ -466,7 +477,7 @@ h5{
     display: flex;
     max-height: 102px;
     justify-content: space-between;
-    min-width: 407px;
+    
     padding: 0px 14px;
     border-radius: 30px 0px;
 }
@@ -760,7 +771,7 @@ font-family: "Josefin Sans";
     height: 100%;
     left: 0px;
     background-size: 100%;
-    top: -100%;
+    top: -99%;
     z-index: -1;
 
 }
@@ -798,8 +809,7 @@ font-family: "Josefin Sans";
 margin: 0px 0px;
 }
 .sec p{
-    width: 893px;
-height: 100px;
+  
 font-size: 20px;
 letter-spacing: 0px;
 line-height: 30px;
@@ -825,10 +835,32 @@ font-family: "Poppins";
     top: -99%;
     
 }
+.inner img{
+    
+    margin-right: 17px;
+}
 @media (max-width:1640px){
     
     .main-container{
         max-width:1300px;
+    }
+    .facility p br{
+        display: none;
+    }
+    .facility{
+        width: 100%;
+    }
+    .buy-options {
+        width: 30%;
+    }
+    .buy-options img{
+        width: 100%;
+    }
+    .nav-logo {
+        width: 90%;
+    }
+    .nav-link{
+        min-width: 547px;
     }
     .cartificate{
         width: 95%;
@@ -836,9 +868,12 @@ font-family: "Poppins";
     .flex{
         max-width: 1300px;
     }
-    h2{
-        line-height: 86px;
-        font-size: 75px;
+    .offer-text h1 {
+        font-size: 190px;
+    }
+    h2 {
+        line-height: 68px;
+        font-size: 59px;
     }
     .banner-btn{
         padding: 19.5px 54.5px;
@@ -849,33 +884,126 @@ font-family: "Poppins";
     .disclamer br{
         display: none;
     }
+    .buy-options p {
+        font-size: 19px;
+        letter-spacing: 0px;
+        line-height: 23px;
+    }
+    .buy-options h5 {
+        font-size: 39px;
+        line-height: 47px;
+    }
+    .product-heading h5 {
+        font-size: 38px;
+    }
+    .product-heading p {
+        font-size: 19px;
+    }
+    .down-pera br{
+        display: none;
+    }
+    .help-container h5 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .up-pera, .down-pera {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .up-pera br, .down-pera br{
+        display: none;
+    }
+    .contact-us {
+        border: none;
+        padding: 16.5px 41.5px;
+    }
+    .btn-text {
+        font-size: 17px;
+    }
+    .reviwe-heading p {
+        font-size: 19px;
+    }
+    .reviwe-heading h5 {
+        font-size: 37px;
+    }
+    .first{
+        padding-top: 30px;
+    padding-bottom: 196px;
+    }
+    .sec h5 {
+        font-size: 37px;
+        line-height: 40px;
+    }
+    .sec{
+        padding-bottom: 118px;
+        padding-top: 57px;
+    }
     
 }
 @media (max-width:1366px){
     .main-container{
         max-width: 1200px;
     }
-    .flex-buy-option{
-        flex-direction: column;
-        align-items: center;
+    .nav-logo {
+        width: 87%;
     }
-    .buy-options{
-        margin-bottom: 20px;
+    .nav-link {
+        min-width: 527px;
     }
+    .nav-link img{
+        width: 80%;
+    }
+    .offer-text p {
+        font-size: 38px;
+        line-height: 27px;
+    }
+    .offer-text h1 {
+        font-size: 183px;
+    }
+    .buy-options p {
+        font-size: 17px;
+        line-height: 17px;
+    }
+    
+    
     .products-container{
         justify-content: space-around;
     
     }
+    .product-heading h5 {
+        font-size: 36px;
+    }
+    .product-heading p {
+        font-size: 17px;
+    }
     .help-container br{
         display: none;
     }
-    .reviwe-cards-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 74px;
-        
-        align-items: center;
+    .up-pera, .down-pera {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .help-container h5 {
+        font-size: 33px;
+        line-height: 43px;
+    }
+    .reviwe-heading h5 {
+        font-size: 35px;
+    }
+    .help-container img {
+        margin-top: 0px;
+    }
+    .footer-flex {
+       
+        padding-top: 30px;
+    }
+    .reviwe-cards-container{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .buy-options h5 {
+        font-size: 32px;
+        line-height: 37px;
     }
     .reviwe-card{
         margin-bottom: 74px;
@@ -894,27 +1022,57 @@ font-family: "Poppins";
     .main-container{
         max-width: 900px;
     }
+    .nav-logo {
+        width: 81%;
+    }
+    .nav-link {
+        min-width: 508px;
+    }
     h2 {
-        line-height: 72px;
-        font-size: 62px;
+        line-height: 67px;
+        font-size: 57px;
+    }
+    .banner-btn {
+        padding: 17.5px 52.5px;
     }
     .inner img{
         width:18%;
-        margin-bottom: 134px;
+        
     }
-    h1{
-        font-size: 159px;
+   .offer-text h1{
+        font-size: 144px;
         line-height: 83px;
         margin-bottom: 0px;
-        margin-top: -12px;
+        
+    }
+    .inner img {
+        
+        margin-right: -24px;
+    }
+    .buy-options h5 {
+        font-size: 27px;
+        line-height: 33px;
+    }
+    .buy-options a {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .product-heading h5 {
+        font-size: 34px;
+    }
+    .product-heading p {
+        font-size: 16px;
     }
     .offer-text p{
-        font-size: 35px;
+        font-size: 31px;
         line-height: 39px;
     }
     .flex-facility{
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    .facility{
+        margin-bottom: 20px;
     }
     .product-heading p {
         font-size: 17px;
@@ -928,12 +1086,13 @@ font-family: "Poppins";
     flex-direction: column;
     }
     .footer-flex{
-        flex-direction: column;
-    align-items: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
     .logo-part p br{
         display: none;
     }
+
     
     .logo-part{
         text-align: center;
@@ -957,6 +1116,12 @@ font-family: "Poppins";
     .nav-link{
         display: none;
     }
+    .nav-logo {
+        width: 66%;
+    }
+    .main-container{
+        max-width: 700px;
+    }
     .nav-bar i{
         color: #ee7c24;
     }
@@ -965,37 +1130,89 @@ font-family: "Poppins";
         font-size: 34px;
         color: #ee7c24;
     }
+    .banner-btn {
+        padding: 15.5px 49.5px;
+    }
+    .btn-text {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 21px;
+        line-height: 19px;
+    }
     
-    .main-container{
-        max-width: 700px;
-    }
     h2 {
-        line-height: 62px;
-        font-size: 52px;
+        line-height: 44px;
+        font-size: 34px;
     }
-    h1 {
-        font-size: 121px;
+    .offer-text h1 {
+        font-size: 81px;
         line-height: 56px;
         margin-bottom: 0px;
-        margin-top: -75px;
+        
+    }
+    .offer-text p {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .offer-container {
+        margin-top: 43px;
+    }
+    .flex-facility {
+        margin-top: 83px;
+    }
+    .flex-buy-option{
+        flex-direction: column;
+        margin-top: 72px;
+    }
+    .product-container{
+        margin-top: 165px;
+    margin-bottom: 98px;
+    }
+    .buy-options {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+    .help-container img {
+        
+        width: 72%;
+    }
+    .reviwe-heading p {
+        font-size: 15px;
+    }
+    .reviwe-heading h5 {
+        font-size: 31px;
+    }
+    .buy-options h5 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    
+    .buy-options p {
+        font-size: 22px;
+        line-height: 20px;
     }
     .inner{
         justify-content: space-around;
     }
     .inner img {
-        margin-bottom: 187px;
+        
     margin-left: 20px;
     }
     .facility{
         margin-bottom: 56px;
+        
     }
     h5{
         font-size: 50px;
     }
     
-    .sec p {
-        width: 700px;
+    .footer-flex {
+        
+        justify-content: center;
     }
+    
     .first {
         padding-bottom: 92px;
     }
@@ -1004,9 +1221,155 @@ font-family: "Poppins";
     }
     .disclamer p {
         font-size: 11px;
+        max-width: 500px;
+        line-height: 18px;
     }
-    .disclamer p {
-        max-width: 700px;
+    
+    .product-heading p {
+        font-size: 10px;
+    }
+    .sec h5 {
+        font-size: 38px;
+    }
+    .sec br{
+        display: none;
+    }
+    .sec p{
+        font-size: 18px;
+    }
+    .first{
+        margin-top: 127px;
+    }
+    .facility {
+        width: 100%;
+    }
+    .offer-text{
+        margin-top: 31px;
+    }
+    .product-heading p {
+        font-size: 17px;
     }
 
+}
+@media (max-width:768px) {
+    .main-container{
+        max-width: 500px;
+    }
+}
+@media(max-width:576px){
+    .nav-logo {
+        width: 55%;
+    }
+    .main-container{
+        max-width: 300px;
+    }
+    .product-heading p {
+        font-size: 17px;
+    }
+    h3 {
+        font-size: 21px;
+        line-height: 19px;
+    }
+    .btn-text {
+        font-size: 11px;
+    }
+    .banner h2 {
+        margin: 16px 0px;
+        line-height: 30px;
+        font-size: 26px;
+    }
+   
+    h3 {
+        font-size: 18px;
+        line-height: 19px;
+    }
+    .banner-btn {
+        padding: 10.5px 36.5px;
+    }
+    .padding-top-bottom {
+        padding-bottom: 79px;
+        padding-top: 16px;
+    }
+    .offer-text h1 {
+        font-size: 46px;
+        line-height: 24px;
+    }
+    .offer-text p {
+        font-size: 11px;
+        line-height: 19px;
+    }
+    .inner img{
+        margin-bottom: 30px;
+        margin-left: 20px;
+      
+    }
+    .facility {
+        max-width: 450px;
+    }
+    .facility img{
+        width: 34%;
+    }
+    h5 {
+        font-size: 40px;
+    }
+    .facility {
+        width: 100%;
+    }
+    .money-heading {
+        line-height: 37px;
+    }
+    h5 {
+        font-size: 31px;
+        line-height: 37px;
+    }
+    .buy-options h5 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .buy-options p {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .product-heading h5 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .reviwe-card br{
+        display: none;
+    }
+    .reviwe-card p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .nmae-occupation h5 {
+        font-size: 23px;
+        line-height: 63px;
+    }
+    .reviwer-name-card h6 {
+        font-size: 196px;
+        line-height: 229px;
+    }
+    .reviwer-name-card h6 {
+        font-size: 196px;
+        line-height: 229px;
+    }
+    .sec h5 {
+        font-size: 33px;
+    }
+    .logo-part p {
+        font-size: 15px;
+    }
+    .footer-link h5{
+        text-align: center;
+    }
+    .footer-link{
+        flex-direction: column;
+        min-width: 300px;
+
+    }
+    ul{
+        text-align: center;
+    }
+
+    
 }
