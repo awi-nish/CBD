@@ -265,7 +265,7 @@ h5{
     height: 100%;
     left: 0px;
     background-size: 100%;
-    top: -100%;
+    top: -99%;
     z-index: -1;
 }
 .product-container::after{
@@ -489,7 +489,10 @@ h5{
 .reviwe-card{
     box-shadow: 0 0 23px rgba(101,101,101,0.1);
     border-radius: 30px 0px;
-    padding: 7px 7px;
+    padding: 10px 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .review-container{
     margin-top: 127px; 
@@ -838,11 +841,17 @@ font-family: "Poppins";
 .inner img{
     
     margin-right: 17px;
+    margin-bottom: 32px;
+}
+
+.cartificate {
+    width: 80%;
 }
 @media (max-width:1640px){
     
     .main-container{
-        max-width:1300px;
+        width:94%;
+        
     }
     .facility p br{
         display: none;
@@ -935,15 +944,13 @@ font-family: "Poppins";
         line-height: 40px;
     }
     .sec{
-        padding-bottom: 118px;
+        padding-bottom: 194px;
         padding-top: 57px;
     }
     
 }
 @media (max-width:1366px){
-    .main-container{
-        max-width: 1200px;
-    }
+   
     .nav-logo {
         width: 87%;
     }
@@ -963,6 +970,9 @@ font-family: "Poppins";
     .buy-options p {
         font-size: 17px;
         line-height: 17px;
+    }
+    .offer-card{
+        margin-top: 50px;
     }
     
     
@@ -992,6 +1002,7 @@ font-family: "Poppins";
     }
     .help-container img {
         margin-top: 0px;
+        margin-bottom: 30px;
     }
     .footer-flex {
        
@@ -1012,16 +1023,14 @@ font-family: "Poppins";
         padding-bottom: 155px;
     }
     .sec{
-        padding-bottom: 108px;
+        padding-bottom: 167px;
     }
     .disclamer p{
         max-width: 1200px;
     }
 }
 @media(max-width:1280px){
-    .main-container{
-        max-width: 900px;
-    }
+    
     .nav-logo {
         width: 81%;
     }
@@ -1067,11 +1076,13 @@ font-family: "Poppins";
         font-size: 31px;
         line-height: 39px;
     }
-    .flex-facility{
-        flex-wrap: wrap;
-        
-    }
+    
     .facility{
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .facility img{
         margin-bottom: 20px;
     }
     .product-heading p {
@@ -1103,13 +1114,16 @@ font-family: "Poppins";
     }
     .socail-media{
         padding: 43px 0px;
-        max-width: 356px;
+        margin-left: 20px;
     }
     .third {
         padding-top: 64px;
     }
     .disclamer p {
         max-width: 900px;
+    }
+    h5{
+        line-height: 46px;
     }
 }
 @media(max-width:992px){
@@ -1119,9 +1133,7 @@ font-family: "Poppins";
     .nav-logo {
         width: 66%;
     }
-    .main-container{
-        max-width: 700px;
-    }
+    
     .nav-bar i{
         color: #ee7c24;
     }
@@ -1162,21 +1174,23 @@ font-family: "Poppins";
         margin-top: 83px;
     }
     .flex-buy-option{
-        flex-direction: column;
+        flex-wrap: wrap;
         margin-top: 72px;
+        justify-content: space-around;
     }
     .product-container{
         margin-top: 165px;
     margin-bottom: 98px;
     }
     .buy-options {
-        width: 100%;
+        width: 49%;
         margin-bottom: 20px;
 
     }
     .help-container img {
         
         width: 72%;
+        margin-bottom: 30px;
     }
     .reviwe-heading p {
         font-size: 15px;
@@ -1185,8 +1199,8 @@ font-family: "Poppins";
         font-size: 31px;
     }
     .buy-options h5 {
-        font-size: 42px;
-        line-height: 52px;
+        font-size: 35px;
+        line-height: 45px;
     }
     
     .buy-options p {
@@ -1205,7 +1219,7 @@ font-family: "Poppins";
         
     }
     h5{
-        font-size: 50px;
+        font-size: 38px;
     }
     
     .footer-flex {
@@ -1221,7 +1235,7 @@ font-family: "Poppins";
     }
     .disclamer p {
         font-size: 11px;
-        max-width: 500px;
+        
         line-height: 18px;
     }
     
@@ -1249,20 +1263,19 @@ font-family: "Poppins";
     .product-heading p {
         font-size: 17px;
     }
+    .money-heading {
+        line-height: 38px;
+    }
 
 }
 @media (max-width:768px) {
-    .main-container{
-        max-width: 500px;
-    }
+    
 }
 @media(max-width:576px){
     .nav-logo {
         width: 55%;
     }
-    .main-container{
-        max-width: 300px;
-    }
+    
     .product-heading p {
         font-size: 17px;
     }
@@ -1315,9 +1328,7 @@ font-family: "Poppins";
     .facility {
         width: 100%;
     }
-    .money-heading {
-        line-height: 37px;
-    }
+    
     h5 {
         font-size: 31px;
         line-height: 37px;
@@ -1370,6 +1381,8 @@ font-family: "Poppins";
     ul{
         text-align: center;
     }
-
+    .product-container::before{
+        top: -100%;
+    }
     
 }
