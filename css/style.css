@@ -18,7 +18,7 @@ button{
 }
 .main-container{
     
-    max-width: 1400px;
+    max-width: 1383px;
     margin: 0px auto;
     
 }
@@ -138,12 +138,12 @@ h2{
     display: flex;
 }
 .image img{
-    height: 157px;
+    
 }
 .image h1{
     font-size: 200px;
     letter-spacing: -6px;
-    line-height: 200px;
+    line-height: 139px;
     color: #52af47;
     font-weight: 700;
     font-family: "Josefin Sans";
@@ -152,6 +152,7 @@ h2{
 }
 .image span{
     font-size: 218px;
+    line-height: 139px;
 }
 .offer-card p{
     font-size: 40px;
@@ -164,7 +165,8 @@ margin: 0px;
 text-align: center;
 }
 .inner{
-    padding: 59px 0px;
+    padding: 93px 0px;
+    margin-left: 10px;
 }
 
 
@@ -431,6 +433,7 @@ h5{
     font-weight: 400;
     font-family: "Poppins";
     text-align: center;
+    margin: 11px 0px;
 }
 .reviwe-card p{
     font-size: 20px;
@@ -839,7 +842,11 @@ font-family: "Poppins";
 .inner img{
     
     margin-right: 17px;
-    margin-bottom: 32px;
+    position: relative;
+    top: -28px;
+}
+.pera{
+    margin-left: 209px;
 }
 
 .cartificate {
