@@ -1103,6 +1103,9 @@ font-family: "Poppins";
     .logo-part p br{
         display: none;
     }
+    .help-container{
+        padding-top: 0px;
+    }
 
     
     .logo-part{
@@ -1199,7 +1202,7 @@ font-family: "Poppins";
         font-size: 31px;
     }
     .buy-options h5 {
-        font-size: 35px;
+        font-size: 30px;
         line-height: 45px;
     }
     
@@ -1318,6 +1321,7 @@ font-family: "Poppins";
     }
     .facility {
         max-width: 450px;
+        align-items: flex-start;
     }
     .facility img{
         width: 34%;
@@ -1383,6 +1387,18 @@ font-family: "Poppins";
     }
     .product-container::before{
         top: -100%;
+    }
+    .flex-facility{
+        flex-direction: column;
+    }
+    .facility{
+        flex-direction: column;
+    }
+    .buy-options {
+        width: 100%;
+    }
+    .inner{
+        margin-top: -11px;
     }
     
 }
