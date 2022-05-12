@@ -306,9 +306,12 @@ h5{
 }
 .products-container{
     display: flex;
+    column-gap: 54px;
+
     justify-content: space-between;
-    margin-top: 70px;
     flex-wrap: wrap;
+    margin-top: 70px;
+    
 }
 .product-image{
     min-height: 258px;
@@ -384,6 +387,7 @@ h5{
 }
 .product-card{
     margin-bottom: 22px;
+    width: 22%;
 }
 .view-btn-contaniner{
     text-align: center;
@@ -769,8 +773,7 @@ ul{
     font-family: "Poppins";
     margin: 0px 0px;
     font-weight: 400;
-    max-width: 1400px;
-    width: 100%;
+    
 }
 .socail-media i:hover{
     color:#52af47;
@@ -882,554 +885,410 @@ font-family: "Poppins";
 .cartificate {
     width: 80%;
 }
-@media (max-width:1640px){
-    
+@media(max-width:1440px){
     .main-container{
-        width:94%;
-        
+        width:90%;
+        margin: 0 auto;
     }
-    .facility p br{
-        display: none;
+    .nav-link{
+        min-width: 455px;
     }
-    .facility{
-        width: 100%;
+    .nav-link a{
+        font-size: 13px;
+        line-height: 23px;
     }
-    .buy-options {
-        width: 30%;
+    .cart img{
+        width: 90%;
     }
-    .buy-options img{
-        width: 100%;
+    .cart {
+        padding: 16.5px 15px;
     }
     .nav-logo {
         width: 90%;
     }
-    .nav-link{
-        min-width: 547px;
+    h3{
+        font-size: 22px;
+        line-height: 33px;
     }
-    .cartificate{
-        width: 95%;
+    .banner h2 {
+        margin: 22px -9px;
     }
-    .flex{
-        max-width: 1300px;
-    }
-    .offer-text h1 {
-        font-size: 190px;
-    }
-    h2 {
-        line-height: 68px;
-        font-size: 59px;
+    h2{
+        font-size: 61px;
+        line-height: 71px;
     }
     .banner-btn{
-        padding: 19.5px 54.5px;
-    }
-    .disclamer p{
-        max-width: 1300px;
-    }
-    .disclamer br{
-        display: none;
-    }
-    .buy-options p {
-        font-size: 19px;
-        letter-spacing: 0px;
-        line-height: 23px;
-    }
-    .buy-options h5 {
-        font-size: 39px;
-        line-height: 47px;
-    }
-    .product-heading h5 {
-        font-size: 38px;
-    }
-    .product-heading p {
-        font-size: 19px;
-    }
-    .down-pera br{
-        display: none;
-    }
-    .help-container h5 {
-        font-size: 35px;
-        line-height: 45px;
-    }
-    .up-pera, .down-pera {
-        font-size: 18px;
-        line-height: 28px;
-    }
-    .up-pera br, .down-pera br{
-        display: none;
-    }
-    .contact-us {
-        border: none;
-        padding: 16.5px 41.5px;
+        padding: 17.5px 47.5px;
     }
     .btn-text {
-        font-size: 17px;
+        font-size: 15px;
+        line-height: 23px;
     }
-    .reviwe-heading p {
-        font-size: 19px;
+    .product-image{
+        min-height: 257px;
+        min-width: 284px;
     }
-    .reviwe-heading h5 {
-        font-size: 37px;
+     /**.product-card {
+        margin: 12px;
     }
-    .first{
-        padding-top: 30px;
-    padding-bottom: 196px;
+   .products-container:nth-child(3n){
+        margin-right: 0px;
+    }**/
+    .inner{
+        width: 100%;
+        padding: 38px 0px;
+        margin-left: 83px;
     }
-    .sec h5 {
-        font-size: 37px;
-        line-height: 40px;
+    .product-card{
+        width: 29%;
     }
-    .sec{
-        padding-bottom: 194px;
-        padding-top: 57px;
+    .inner img{
+        height: 5%;
+        width: 16%;
+        top: -2px;
+        left: -11px;
     }
-    
-}
-@media (max-width:1366px){
-   
-    .nav-logo {
-        width: 87%;
+    .image span {
+        font-size: 148px;
     }
-    .nav-link {
-        min-width: 527px;
+    .image h1 {
+        font-size: 133px;
     }
-    .nav-link img{
-        width: 80%;
-    }
-    .offer-text p {
-        font-size: 38px;
-        line-height: 27px;
-    }
-    .offer-text h1 {
-        font-size: 183px;
-    }
-    .buy-options p {
-        font-size: 17px;
-        line-height: 17px;
+    .offer-card p {
+        font-size: 29px;
+        line-height: 39px;
     }
     .offer-card{
-        margin-top: 50px;
+        min-height: 258px;
     }
-    
-    
-    .products-container{
-        justify-content: space-around;
-    
+    .pera {
+        margin-left: 112px;
     }
-    .product-heading h5 {
-        font-size: 36px;
+    .offer-card p {
+        font-size: 29px;
+        line-height: 39px;
     }
-    .product-heading p {
-        font-size: 17px;
+    .facility{
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+    }
+    .facility br{
+        display: none;
+    }
+    .buy-options{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .buy-options img{
+        width: 100%;
+    }
+    .flex-buy-option br{
+        display: none;
+    }
+    .buy-options h5 {
+        font-size: 33px;
+        line-height: 43px;
     }
     .help-container br{
         display: none;
     }
-    .up-pera, .down-pera {
-        font-size: 16px;
-        line-height: 26px;
+    .help-container img {
+        width: 45%;
+        
+        height: 50%;
     }
     .help-container h5 {
         font-size: 33px;
         line-height: 43px;
     }
+    .up-pera, .down-pera {
+        font-size: 18px;
+    }
     .reviwe-heading h5 {
-        font-size: 35px;
-    }
-    .help-container img {
-        margin-top: 0px;
-        margin-bottom: 30px;
-    }
-    .footer-flex {
-       
-        padding-top: 30px;
-    }
-    .reviwe-cards-container{
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .buy-options h5 {
-        font-size: 32px;
-        line-height: 37px;
-    }
-    .reviwe-card{
-        margin-bottom: 74px;
-    }
-    .first{
-        padding-bottom: 155px;
-    }
-    .sec{
-        padding-bottom: 167px;
-    }
-    .disclamer p{
-        max-width: 1200px;
-    }
-}
-@media(max-width:1280px){
-    
-    .nav-logo {
-        width: 81%;
-    }
-    .nav-link {
-        min-width: 508px;
-    }
-    h2 {
-        line-height: 67px;
-        font-size: 57px;
-    }
-    .banner-btn {
-        padding: 17.5px 52.5px;
-    }
-    .inner img{
-        width:18%;
-        
-    }
-   .offer-text h1{
-        font-size: 144px;
-        line-height: 83px;
-        margin-bottom: 0px;
-        
-    }
-    .inner img {
-        
-        margin-right: -24px;
-    }
-    .buy-options h5 {
-        font-size: 27px;
-        line-height: 33px;
-    }
-    .buy-options a {
-        font-size: 16px;
-        line-height: 22px;
-    }
-    .product-heading h5 {
-        font-size: 34px;
-    }
-    .product-heading p {
-        font-size: 16px;
-    }
-    .offer-text p{
-        font-size: 31px;
-        line-height: 39px;
-    }
-    
-    .facility{
-        margin-bottom: 20px;
-        flex-direction: column;
-        align-items: center;
-    }
-    .facility img{
-        margin-bottom: 20px;
-    }
-    .product-heading p {
-        font-size: 17px;
-    }
-    .help-container{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .flex{
-        align-items: center;
-    flex-direction: column;
-    }
-    .footer-flex{
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .logo-part p br{
-        display: none;
-    }
-    .help-container{
-        padding-top: 0px;
-    }
-
-    
-    .logo-part{
-        text-align: center;
-
-    }
-    .search{
-        text-align: center;
-    }
-    .socail-media{
-        padding: 43px 0px;
-        margin-left: 20px;
-    }
-    .third {
-        padding-top: 64px;
-    }
-    .disclamer p {
-        max-width: 900px;
-    }
-    h5{
-        line-height: 46px;
-    }
-}
-@media(max-width:992px){
-    .nav-link{
-        display: none;
-    }
-    .nav-logo {
-        width: 66%;
-    }
-    
-    .nav-bar i{
-        color: #ee7c24;
-    }
-    .toggle{
-        display: block;
-        font-size: 34px;
-        color: #ee7c24;
-    }
-    .banner-btn {
-        padding: 15.5px 49.5px;
-    }
-    .btn-text {
-        font-size: 15px;
-    }
-    h3 {
-        font-size: 21px;
-        line-height: 19px;
-    }
-    
-    h2 {
-        line-height: 44px;
-        font-size: 34px;
-    }
-    .offer-text h1 {
-        font-size: 81px;
-        line-height: 56px;
-        margin-bottom: 0px;
-        
-    }
-    .offer-text p {
-        font-size: 15px;
-        line-height: 19px;
-    }
-    .offer-container {
-        margin-top: 43px;
-    }
-    .flex-facility {
-        margin-top: 83px;
-    }
-    .flex-buy-option{
-        flex-wrap: wrap;
-        margin-top: 72px;
-        justify-content: flex-start;
-    }
-    .product-container{
-        margin-top: 165px;
-    margin-bottom: 98px;
-    }
-    .buy-options {
-        width: 49%;
-        margin-bottom: 20px;
-
-    }
-    .help-container img {
-        
-        width: 72%;
-        margin-bottom: 30px;
+        font-size: 37px;
+        line-height: 47px;
     }
     .reviwe-heading p {
-        font-size: 15px;
-    }
-    .reviwe-heading h5 {
-        font-size: 31px;
-    }
-    .buy-options h5 {
-        font-size: 30px;
-        line-height: 45px;
-    }
-    
-    .buy-options p {
-        font-size: 22px;
-        line-height: 20px;
-    }
-    .inner{
-        justify-content: space-around;
-    }
-    .inner img {
-        
-    margin-left: 20px;
-    }
-    .facility{
-        margin-bottom: 56px;
-        
-    }
-    h5{
-        font-size: 38px;
-    }
-    
-    .footer-flex {
-        
-        justify-content: center;
-    }
-    
-    .first {
-        padding-bottom: 92px;
-    }
-    .sec {
-        padding-bottom: 80px;
-    }
-    .disclamer p {
-        font-size: 11px;
-        
-        line-height: 18px;
-    }
-    
-    .product-heading p {
-        font-size: 10px;
-    }
-    .sec h5 {
-        font-size: 38px;
-    }
-    .sec br{
-        display: none;
-    }
-    .sec p{
         font-size: 18px;
-    }
-    .first{
-        margin-top: 127px;
-    }
-    .facility {
-        width: 100%;
-    }
-    .offer-text{
-        margin-top: 31px;
-    }
-    .product-heading p {
-        font-size: 17px;
-    }
-    
-
-}
-@media (max-width:768px) {
-    
-}
-@media(max-width:576px){
-    .nav-logo {
-        width: 55%;
-    }
-    
-    .product-heading p {
-        font-size: 17px;
-    }
-    h3 {
-        font-size: 21px;
-        line-height: 19px;
-    }
-    .btn-text {
-        font-size: 11px;
-    }
-    .banner h2 {
-        margin: 16px 0px;
-        line-height: 30px;
-        font-size: 26px;
-    }
-   
-    h3 {
-        font-size: 18px;
-        line-height: 19px;
-    }
-    .banner-btn {
-        padding: 10.5px 36.5px;
-    }
-    .padding-top-bottom {
-        padding-bottom: 79px;
-        padding-top: 16px;
-    }
-    .offer-text h1 {
-        font-size: 46px;
-        line-height: 24px;
-    }
-    .offer-text p {
-        font-size: 11px;
-        line-height: 19px;
-    }
-    .inner img{
-        margin-bottom: 30px;
-        max-height: 138px;
-      
-    }
-   
-    .facility {
-        max-width: 450px;
-        align-items: flex-start;
-    }
-    .facility img{
-        width: 34%;
-    }
-    h5 {
-        font-size: 40px;
-    }
-    .facility {
-        width: 100%;
-    }
-    
-    h5 {
-        font-size: 31px;
-        line-height: 37px;
-    }
-    .buy-options h5 {
-        font-size: 35px;
-        line-height: 45px;
-    }
-    .buy-options p {
-        font-size: 20px;
-        line-height: 20px;
-    }
-    .product-heading h5 {
-        font-size: 30px;
-        line-height: 40px;
+        line-height: 28px;
     }
     .reviwe-card br{
         display: none;
     }
+    .reviwe-card{
+        width: 30%;
+        padding: 10px 1px;
+    }
+    .reviwe-card p {
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .nmae-occupation h5 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .nmae-occupation p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .reviwer-name-card h6 {
+        font-size: 226px;
+        line-height: 252px;
+    }
+    .reviwer-name-card {
+        max-height: 90px;
+        width: 98%;
+        max-height: 90px;
+    }
+    .first{
+        padding-bottom: 102px;
+    }
+    .sec h5 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .sec-containt br{
+        display: none;
+    }
+    .sec p {
+        font-size: 17px;
+        line-height: 28px;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .sec{
+        padding-top: 20px;
+        padding-bottom: 94px;
+
+    }
+    .footer-flex br{
+        display: none;
+    }
+    .footer-flex{
+        flex-wrap: wrap;
+    }
+    .logo-part{
+        text-align: center;
+    }
+    .third{
+        padding-top: 26px;
+    }
+    .disclamer br{
+        display: none;
+    }
+}
+@media(max-width: 1024px){
+    h5{
+        font-size: 38px;
+        line-height: 50px;
+    }
+}
+@media(max-width:991px){
+    .nav-logo {
+        width: 82%;
+    }
+    .nav-link {
+        min-width: 410px;
+    }
+    .cart img {
+        width: 84%;
+    }
+    .cart {
+        padding: 14.5px 13px;
+    }
+    h3 {
+        font-size: 19px;
+        line-height: 29px;
+    }
+    h2 {
+        font-size: 52px;
+        line-height: 61px;
+    }
+    .btn-text {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .image h1 {
+        font-size: 100px;
+    }
+    .image span {
+        font-size: 110px;
+    }
+    .offer-card p {
+        font-size: 23px;
+        line-height: 33px;
+    }
+    .inner img{
+        top: 17px;
+        left: -4px;
+    }
+    .offer-card {
+        min-height: 176px;
+    }
+    .inner{
+        padding: 0px 0px;
+
+    }
+    .pera {
+        margin-left: 42px;
+    }
+    h5 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .money-heading {
+        line-height: 42px;
+    }
+    .facility p {
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .facility img{
+        width: 41%;
+    }
+    .buy-options h5 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .buy-options p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .buy-options a {
+        font-size: 15px;
+        line-height: 12px;
+    }
+    .product-heading h5 {
+        font-size: 34px;
+    }
+    .product-heading p {
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .product-card {
+        width: 46%;
+    }
+    .help-container{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .help-container img {
+        /* margin-top: -6px; */
+        margin-bottom: 35px;
+    }
+    .reviwe-heading h5 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .reviwe-heading p {
+        font-size: 16px;
+        line-height: 26px;
+    }
     .reviwe-card p {
         font-size: 15px;
         line-height: 25px;
+        margin: 14px 14px;
     }
     .nmae-occupation h5 {
-        font-size: 23px;
-        line-height: 63px;
+        font-size: 14px;
+        line-height: 24px;
     }
     .reviwer-name-card h6 {
-        font-size: 196px;
-        line-height: 229px;
+        font-size: 197px;
+        line-height: 207px;
     }
-    .reviwer-name-card h6 {
-        font-size: 196px;
-        line-height: 229px;
+    .reviwer-name-card{
+        max-height: 73px;
+    }
+    .nmae-occupation p{
+        font-size: 11px;
+        margin: 0px 0px;
+        line-height: 2;
     }
     .sec h5 {
-        font-size: 33px;
+        font-size: 25px;
+        line-height: 35px;
     }
-    .logo-part p {
+    .sec p {
         font-size: 15px;
+        line-height: 25px;
     }
-    .footer-link h5{
+    .footer-flex {
+        justify-content: center;
+    }
+    .top-link {
         text-align: center;
     }
-    .footer-link{
-        flex-direction: column;
-        min-width: 300px;
+    .disclamer p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .disclamer span {
+        font-size: 11px;
+        line-height: 21px;
+    }
 
+}
+@media(max-width:768px){
+    .nav-link{
+        display: none;
     }
-    ul{
-        text-align: center;
+    .toggle {
+        display: block;
     }
-    .product-container::before{
-        top: -100%;
+    .nav-logo {
+        width: 55%;
     }
-    .flex-facility{
+    h3 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    h2 {
+        font-size: 33px;
+        line-height: 43px;
+    }
+    .banner-btn {
+        padding: 13.5px 39.5px;
+    }
+    .padding-top-bottom {
+        padding-bottom: 90px;
+        padding-top: 17px;
+    }
+    .image span {
+        font-size: 77px;
+    }
+    .image h1 {
+        font-size: 70px;
+        margin-left: 29px;
+    }
+    .inner img {
+        top: 33px;
+        left: -49px;
+        position: absolute;
+        height: 38%;
+        width: 17%;
+    }
+    .image{
+        position: relative;
+    }
+    .offer-card p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .flex-facility {
         flex-direction: column;
     }
-    .facility{
-        flex-direction: column;
-    }
-    .buy-options {
+    .facility {
+        flex-direction: row;
+        align-items: center;
         width: 100%;
+        margin-bottom: 10px;
     }
-   
+    .facility img{
+        width: 20%;
+    }
 }
