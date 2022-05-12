@@ -106,10 +106,14 @@ h2{
     z-index: 10;
 }
 .banner-btn:hover,.cart:hover,.plan-icon:hover,.contact-us:hover{
-        background-color: #ee2453;
+        background-color: #52af47;
 }
-.email:hover,.buy-options a:hover{
-    color: #ee2453;
+.email:hover{
+    color: #ff0000;
+    
+}
+.buy-options a:hover{
+    color: #52af47;
 }
 .toggle{
     display: none;
@@ -136,13 +140,12 @@ h2{
 }
 .image{
     display: flex;
+    margin-left: 18px;
 }
-.image img{
-    
-}
+
 .image h1{
     font-size: 200px;
-    letter-spacing: -6px;
+    letter-spacing: -8px;
     line-height: 139px;
     color: #52af47;
     font-weight: 700;
@@ -169,7 +172,9 @@ text-align: center;
     margin-left: 10px;
 }
 
-
+.facility-pera{
+    margin-top: 0px;
+}
 
 
 .facility{
@@ -186,12 +191,12 @@ text-align: center;
     color: #000000;
     font-weight: 400;
     font-family: "Poppins";
-    margin-top: 0px;
 }
+
 h5{
     font-size: 40px;
     letter-spacing: -1px;
-    line-height: 67px;
+    line-height: 92px;
     color: #000000;
     font-weight: 700;
     font-family: "Josefin Sans";
@@ -201,7 +206,7 @@ h5{
 .flex-facility{
     display: flex;
     justify-content: space-around;
-    margin-top: 125px;
+    margin-top: 92px;
 }
 .buy-options h5{
     font-size: 40px;
@@ -409,7 +414,7 @@ h5{
 }
 
 .email{
-    color:#ff0000;
+    color:black;
     text-decoration: underline;
 }
 .down-pera{
@@ -428,12 +433,12 @@ h5{
 .reviwe-heading p{
     font-size: 20px;
     letter-spacing: 0px;
-    line-height: 27px;
+    line-height: 30px;
     color: #000000;
     font-weight: 400;
     font-family: "Poppins";
     text-align: center;
-    margin: 11px 0px;
+    margin: 8px 0px;
 }
 .reviwe-card p{
     font-size: 20px;
@@ -447,15 +452,20 @@ h5{
 .nmae-occupation h5{
     font-size: 26px;
     letter-spacing: -1px;
-    line-height: 72px;
+    line-height: 36px;
     color: #ffffff;
     font-weight: 700;
+    margin-top: 17px;
+    margin-bottom: 7px;
     font-family: "Josefin Sans";
+}
+.sec-containt{
+    z-index: 27;
 }
 .nmae-occupation p{
     font-size: 18px;
     letter-spacing: 0px;
-    line-height: 23px;
+    line-height: 28px;
     margin: 0px 0px;
     color: #ffffff;
     font-weight: 400;
@@ -464,7 +474,7 @@ h5{
 .reviwer-name-card h6{
     font-size: 269px;
     letter-spacing: -7px;
-    line-height: 287px;
+    line-height: 279px;
     margin: 0px 0px;
     color: #ebf8e0;
     font-weight: 700;
@@ -487,7 +497,7 @@ h5{
 .reviwe-card{
     box-shadow: 0 0 23px rgba(101,101,101,0.1);
     border-radius: 30px 0px;
-    padding: 10px 6px;
+    padding: 10px 7px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -533,6 +543,9 @@ h5{
     left: 0px;
     background-size: contain;
     top: -278px;
+}
+.disclamer p br{
+    display: none;
 }
 
 .know-more{
@@ -615,7 +628,7 @@ ul{
 .footer-link h5{
     font-size: 20px;
     letter-spacing: 0px;
-    line-height: 92px;
+    line-height: 30px;
     color: #ffffff;
     font-weight: 700;
     font-family: "Josefin Sans";
@@ -629,7 +642,7 @@ ul{
     font-family: "Poppins";
 }
 .footer-link li:hover{
-    color:#ee2453 ;
+    color:#52af47 ;
 }
 
 .logo-part p{
@@ -639,7 +652,13 @@ ul{
     color: #ffffff;
     font-weight: 400;
     font-family: "Poppins";
-    margin-top: 43px;
+    margin-top: 48px;
+}
+.quick-link-container{
+    margin-top: 15px;
+}
+.top-link{
+    margin-top: 28px;
 }
 .email-add{
     min-width:350px;
@@ -650,6 +669,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 24px;
 }
 .plan-icon{
     padding: 14px 14px;
@@ -663,11 +683,11 @@ ul{
 }
 .search h5{
     font-size: 20px;
-letter-spacing: 0px;
-line-height: 92px;
-color: #ffffff;
-font-weight: 700;
-font-family: "Josefin Sans";
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Josefin Sans";
 }
 .email-add input{
     font-size: 16px;
@@ -692,11 +712,18 @@ font-family: "Josefin Sans";
     padding:20px 0px;
     display: flex;
     justify-content: space-between;
-    max-width: 100px
+    max-width: 100px;
+    margin-top: 9px;
 }
 .socail-media i{
     font-size: 25px;
     color: white;
+}
+.money-heading{
+    line-height: 50px;
+}
+.money-p{
+    margin-top: 7px;
 }
 #twit,#linkedIn{
     font-size: 15px;
@@ -735,19 +762,21 @@ font-family: "Josefin Sans";
     font-family: "Poppins";
 }
 .disclamer p{
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 0px;
     line-height: 23px;
     color: #ffffff;
     font-family: "Poppins";
     margin: 0px 0px;
+    font-weight: 400;
     max-width: 1400px;
+    width: 100%;
 }
 .socail-media i:hover{
-    color:#ee2453;
+    color:#52af47;
 }
 #twit:hover,#linkedIn:hover{
-    background-color:#ee2453 ;
+    background-color:#52af47 ;
 }
 .rating i:hover{
     color:#666668;
@@ -844,6 +873,7 @@ font-family: "Poppins";
     margin-right: 17px;
     position: relative;
     top: -28px;
+    left: -22px;
 }
 .pera{
     margin-left: 209px;
@@ -1322,9 +1352,7 @@ font-family: "Poppins";
         max-height: 138px;
       
     }
-    .pera{
-        
-    }
+   
     .facility {
         max-width: 450px;
         align-items: flex-start;
@@ -1402,5 +1430,6 @@ font-family: "Poppins";
     }
     .buy-options {
         width: 100%;
+    }
    
 }
